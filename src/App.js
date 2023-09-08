@@ -22,7 +22,7 @@ function About() {
 function Work() {
   return (
     <section id="work" className="section-box">
-      <p>Hello! I'm a senior at Northwestern in communication studies and computer science, where I am advised by Aaron Shaw. I currently work with the <a href="https://wiki.communitydata.science/Main_Page" target="_blank" rel="noreferrer">Community Data Science Collective</a> and <a href="https://hci.stanford.edu" target="_blank" rel="noreferrer">Stanford HCI Group</a>. I also lead the <a href="https://sites.northwestern.edu/embeddingethics/about-us/" target="_blank" rel="noreferrer">Northwestern Embedded Ethics Initiative</a>.</p>
+      <p>Hello! I'm a senior at Northwestern in communication studies and computer science, where I am advised by Aaron Shaw. I'm currently working with the <a href="https://wiki.communitydata.science/Main_Page" target="_blank" rel="noreferrer">Community Data Science Collective</a> and <a href="https://hci.stanford.edu" target="_blank" rel="noreferrer">Stanford HCI Group</a>. I also lead the <a href="https://sites.northwestern.edu/embeddingethics/about-us/" target="_blank" rel="noreferrer">Northwestern Embedded Ethics Initiative</a>.</p>
       <p>My research interests are in social computing, human-AI interaction, and generative agents. Some  questions I'm particularly excited about are:</p>
       <ul>
         <li>What do non-technical users of foundation models need to develop accurate heuristics, such that they can leverage AI as a copilot rather than an autopilot?</li>
