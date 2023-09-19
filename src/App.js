@@ -78,6 +78,7 @@ function Updates() {
       <h2>news</h2>
       <ul>
         <li>08/2023: Presented poster for Stanford CURIS</li>
+        <li>06/2023: Started UW DUB REU</li>
         <li>04/2023: Student speaker at Northwestern SoC board meeting</li>
         <li>04/2023: Crowd favorite & track winner at WildHacks</li>
         <li>02/2023: Joined Lambda Pi Eta</li>
