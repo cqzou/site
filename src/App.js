@@ -25,8 +25,7 @@ function Work() {
       <p>Hello! I'm a senior at Northwestern in communication studies and computer science, where I am advised by Aaron Shaw. I current work with the <a href="https://wiki.communitydata.science/Main_Page" target="_blank" rel="noreferrer">Community Data Science Collective</a> and <a href="https://hci.stanford.edu" target="_blank" rel="noreferrer">Stanford HCI Group</a>. I also lead the <a href="https://sites.northwestern.edu/embeddingethics/about-us/" target="_blank" rel="noreferrer">Northwestern Embedded Ethics Initiative</a>.</p>
       <p>My research interests are in social computing, human-AI interaction, and generative agents. Some  questions I'm particularly excited about are:</p>
       <ul>
-        <li>What do non-technical users of foundation models need to develop accurate heuristics, such that they can leverage AI as a copilot rather than an autopilot?</li>
-        <li>How can we develop rigorous, tractable benchmarks for large language model generations that ostensibly resemble human behavior?</li>
+        <li>How can users of large language models verify outputs without knowledge of the ground truth?</li>
         <li>How will the proliferation of AI affect society, and how can its consequences be guided towards social good?</li>
       </ul>
     </section>
