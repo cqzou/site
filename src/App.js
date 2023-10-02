@@ -50,10 +50,22 @@ function Research() {
     <section id="research" className="section-box">
       <h2>research</h2>
       <ResearchItem 
+        title="Language Model-Human Behavior Robustness (honors thesis)" 
+        description="Evaluating prior LLM behavioral studies via replication and ablation" 
+        link=""
+        date="05/2023 — Now"
+      />
+      <ResearchItem 
         title="Generative Agent-Based Modeling" 
         description="Augmenting ABMs with generative capabilities to simulate human behavior" 
         link=""
         date="05/2023 — Now"
+      />
+      <ResearchItem 
+        title="Institutional Simulation" 
+        description="Creating proxies of complex social systems for counterfactual testing" 
+        link=""
+        date="08/2023 — Now"
       />
       <ResearchItem 
         title="Embedded Ethics Initiative" 
@@ -79,7 +91,7 @@ function Updates() {
         <li>08/2023: Presented poster for Stanford CURIS</li>
         <li>06/2023: Started UW DUB REU</li>
         <li>04/2023: Student speaker at Northwestern SoC board meeting</li>
-        <li>04/2023: Crowd favorite & track winner at WildHacks</li>
+        <li>04/2023: <a href="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/wildhacks-2023-inspires-creativity-innovation-and-collaboration.html">Crowd favorite & track winner at WildHacks</a></li>
         <li>02/2023: Joined Lambda Pi Eta</li>
       </ul>
     </section>
