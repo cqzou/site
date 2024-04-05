@@ -12,13 +12,12 @@ function About() {
         </p>
       </div>
       <div className="img-with-caption">
-        <img src={pic} alt="photo of me :)" />
+        <img src={pic} alt="photo of me :)" style={{width: "160px"}} />
         <p id="caption">hello :)</p>
       </div>
     </section>
   );
 }
-
 function Work() {
   return (
     <section id="work" className="section-box">
