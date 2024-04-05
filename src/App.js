@@ -8,7 +8,7 @@ function About() {
       <div>
         <h2>carolyn zou</h2>
         <p>cz [at] u.northwestern.edu</p>
-        <p><a href="https://github.com/cxrro" target="_blank" rel="noreferrer">github</a> | <a href="" target="_blank" rel="noreferrer">cv</a>
+        <p><a href="https://github.com/cxrro" target="_blank" rel="noreferrer">github</a> | <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a> | <span onMouseOver={e => (e.currentTarget.style.backgroundImage = "url('./adobo.png')")}>hamster</span>
         </p>
       </div>
       <div className="img-with-caption">
