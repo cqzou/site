@@ -9,7 +9,7 @@ function About() {
       <div>
         <h2>carolyn zou</h2>
         <p>cz [at] u.northwestern.edu</p>
-        <p><a href="https://github.com/cxrro" target="_blank" rel="noreferrer">github</a> | <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a> | <a href="#" onMouseOver={e => {e.preventDefault(); e.currentTarget.style.cursor = adobo}}>hamster</a>
+        <p><a href="https://github.com/cxrro" target="_blank" rel="noreferrer">github</a> | <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a> | <a href="#" onMouseOver={e => {e.preventDefault(); e.currentTarget.innerHTML += '<img src="' + adobo + '" style="width: 100px; position: absolute;"/>'}}>hamster</a>
         </p>
       </div>
       <div className="img-with-caption">
