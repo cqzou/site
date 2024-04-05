@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import pic from './boomheadshot.jpg';
+import adobo from './adobo.png';
 
 function About() {
   return (
@@ -8,7 +9,7 @@ function About() {
       <div>
         <h2>carolyn zou</h2>
         <p>cz [at] u.northwestern.edu</p>
-        <p><a href="https://github.com/cxrro" target="_blank" rel="noreferrer">github</a> | <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a> | <a href="#" onMouseOver={e => {e.preventDefault(); e.currentTarget.style.cursor = `url('./adobo.png'), auto`;}}>hamster</a>
+        <p><a href="https://github.com/cxrro" target="_blank" rel="noreferrer">github</a> | <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a> | <a href="#" onMouseOver={e => {e.preventDefault(); e.currentTarget.style.cursor = adobo}}>hamster</a>
         </p>
       </div>
       <div className="img-with-caption">
