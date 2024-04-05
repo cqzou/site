@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import bearfriend from './bearfriend.png';
+import pic from './boomheadshot.jpg';
 
 function About() {
   return (
@@ -12,8 +12,8 @@ function About() {
         </p>
       </div>
       <div className="img-with-caption">
-        <img src={bearfriend} alt="a bear" />
-        <p id="caption">please accept this bear while I search for a good headshot</p>
+        <img src={pic} alt="photo of me :)" />
+        <p id="caption">hello :)</p>
       </div>
     </section>
   );
@@ -22,7 +22,7 @@ function About() {
 function Work() {
   return (
     <section id="work" className="section-box">
-      <p>Hello! I'm a senior at Northwestern in communication studies and computer science, where I am advised by Aaron Shaw. I currently work with the <a href="https://wiki.communitydata.science/Main_Page" target="_blank" rel="noreferrer">Community Data Science Collective</a> and <a href="https://hci.stanford.edu" target="_blank" rel="noreferrer">Stanford HCI Group</a>. I also lead the <a href="https://sites.northwestern.edu/embeddingethics/about-us/" target="_blank" rel="noreferrer">Northwestern Embedded Ethics Initiative</a>.</p>
+      <p>I'm a senior undergraduate at Northwestern, where I am advised by Aaron Shaw. I currently work with the <a href="https://wiki.communitydata.science/Main_Page" target="_blank" rel="noreferrer">Community Data Science Collective</a> and <a href="https://hci.stanford.edu" target="_blank" rel="noreferrer">Stanford HCI Group</a>. I also lead the <a href="https://sites.northwestern.edu/embeddingethics/about-us/" target="_blank" rel="noreferrer">Northwestern Embedded Ethics Initiative</a>.</p> I will be starting my PhD in Computer Science at Stanford University in Fall 2024, supported by a Stanford Graduate Fellowship and NSF Graduate Research Fellowship!
       <p>My research interests are in social computing, human-AI interaction, and generative agents. Some  questions I'm particularly excited about are:</p>
       <ul>
         <li>How can users of large language models verify outputs with varying levels of access to the ground truth?</li>
