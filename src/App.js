@@ -4,12 +4,13 @@ import pic from './boomheadshot.jpg';
 import adobo from './adobo.png';
 
 function About() {
+  const [showDobo, setShowDobo] = React.useState(false);
   return (
     <section id="about" className="section-box flex-container">
       <div>
         <h2>carolyn zou</h2>
         <p>cz [at] u.northwestern.edu</p>
-        <p><a href="https://github.com/cxrro" target="_blank" rel="noreferrer">github</a> | <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a> | <a href="#" onMouseOver={e => {e.preventDefault(); e.currentTarget.innerHTML += '<img src="' + adobo + '" style="width: 100px; position: absolute;"/>'}}>hamster</a>
+        <p><a href="https://github.com/cxrro" target="_blank" rel="noreferrer">github</a> | <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a> | <a onMouseOver={e => {e.preventDefault(); document.documentElement.style.cursor = "url('./cursordobo.png')"; setShowDobo(true)}} onMouseLeave={e => {e.preventDefault(); document.documentElement.style.cursor = 'pointer';  setShowDobo(false)}}>hamster</a> {showDobo && <img src={adobo} alt="adobo" style={{width: "100px", position: "absolute"}} />}
         </p>
       </div>
       <div className="img-with-caption">
