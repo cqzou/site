@@ -10,7 +10,7 @@ function About() {
       <div>
         <h2>carolyn zou</h2>
         <p>cz [at] u.northwestern.edu</p>
-        <p><a href="https://github.com/cxrro" target="_blank" rel="noreferrer">github</a> | <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a> | <a onMouseOver={e => {e.preventDefault(); document.documentElement.style.cursor = "url('./cursordobo.png')"; setShowDobo(true)}} onMouseLeave={e => {e.preventDefault(); document.documentElement.style.cursor = 'pointer';  setShowDobo(false)}}>hamster</a> {showDobo && <img src={adobo} alt="adobo" style={{width: "100px", position: "absolute"}} />}
+        <p><a href="https://github.com/cqzou" target="_blank" rel="noreferrer">github</a> | <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a> | <a onMouseOver={e => {e.preventDefault(); document.documentElement.style.cursor = "url('./cursordobo.png')"; setShowDobo(true)}} onMouseLeave={e => {e.preventDefault(); document.documentElement.style.cursor = 'pointer';  setShowDobo(false)}}>hamster</a> {showDobo && <img src={adobo} alt="adobo" style={{width: "100px", position: "absolute"}} />}
         </p>
       </div>
       <div className="img-with-caption">
