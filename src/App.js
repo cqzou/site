@@ -84,20 +84,20 @@ function Research() {
   );
 }
 
-function Updates() {
-  return (
-    <section id="ups" className="section-box">
-      <h2>news</h2>
-      <ul>
-        <li>08/2023: Presented poster for Stanford CURIS</li>
-        <li>06/2023: Started UW DUB REU</li>
-        <li>04/2023: Student speaker at Northwestern SoC board meeting</li>
-        <li>04/2023: <a href="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/wildhacks-2023-inspires-creativity-innovation-and-collaboration.html">Crowd favorite & track winner at WildHacks</a></li>
-        <li>02/2023: Joined Lambda Pi Eta</li>
-      </ul>
-    </section>
-  );
-}
+// function Updates() {
+//   return (
+//     <section id="ups" className="section-box">
+//       <h2>news</h2>
+//       <ul>
+//         <li>08/2023: Presented poster for Stanford CURIS</li>
+//         <li>06/2023: Started UW DUB REU</li>
+//         <li>04/2023: Student speaker at Northwestern SoC board meeting</li>
+//         <li>04/2023: <a href="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/wildhacks-2023-inspires-creativity-innovation-and-collaboration.html">Crowd favorite & track winner at WildHacks</a></li>
+//         <li>02/2023: Joined Lambda Pi Eta</li>
+//       </ul>
+//     </section>
+//   );
+// }
 
 function App() {
   return (
@@ -107,7 +107,7 @@ function App() {
         <About />
         <Work />
         <Research />
-        <Updates />
+        {/* <Updates /> */}
       </main>
     </div>
   );
