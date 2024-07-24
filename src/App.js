@@ -23,12 +23,7 @@ function About() {
 function Work() {
   return (
     <section id="work" className="section-box">
-      <p>I'm a senior undergraduate at Northwestern, where I am advised by Aaron Shaw. I currently work with the <a href="https://wiki.communitydata.science/Main_Page" target="_blank" rel="noreferrer">Community Data Science Collective</a> and <a href="https://hci.stanford.edu" target="_blank" rel="noreferrer">Stanford HCI Group</a>. I also lead the <a href="https://sites.northwestern.edu/embeddingethics/about-us/" target="_blank" rel="noreferrer">Northwestern Embedded Ethics Initiative</a>.</p> I will be starting my PhD in Computer Science at Stanford University in Fall 2024, supported by a Stanford Graduate Fellowship and NSF Graduate Research Fellowship!
-      <p>My research interests are in social computing, human-AI interaction, and generative agents. Some  questions I'm particularly excited about are:</p>
-      <ul>
-        <li>How can users of large language models verify outputs with varying levels of access to the ground truth?</li>
-        <li>How will the proliferation of black-box systems affect societal processes, and how can its consequences be guided towards social good?</li>
-      </ul>
+      <p>I recently completed my undergrad at Northwestern, where I was advised by Aaron Shaw. I also led the <a href="https://sites.northwestern.edu/embeddingethics/about-us/" target="_blank" rel="noreferrer">Northwestern Embedded Ethics Initiative</a>.</p> I will be starting my PhD in Computer Science at Stanford University in Fall 2024, supported by a Stanford Graduate Fellowship and NSF Graduate Research Fellowship!
     </section>
   );
 }
@@ -46,43 +41,43 @@ function ResearchItem(props) {
   );
 }
 
-function Research() {
-  return (
-    <section id="research" className="section-box">
-      <h2>research</h2>
-      <ResearchItem 
-        title="Language Model-Human Behavior Robustness (honors thesis)" 
-        description="Evaluating prior LLM behavioral studies via replication and ablation" 
-        link=""
-        date="05/2023 — Now"
-      />
-      <ResearchItem 
-        title="Generative Agent-Based Modeling" 
-        description="Augmenting ABMs with generative capabilities to simulate human behavior" 
-        link=""
-        date="05/2023 — Now"
-      />
-      <ResearchItem 
-        title="Institutional Simulation" 
-        description="Creating proxies of complex social systems for counterfactual testing" 
-        link=""
-        date="08/2023 — Now"
-      />
-      <ResearchItem 
-        title="Embedded Ethics Initiative" 
-        description="Integrating ethics into the CS core curriculum at Northwestern"
-        link="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/prioritizing-the-ethical-dimensions-of-computer-science.html"
-        date="11/2022 — Now"
-      />
-      <ResearchItem 
-        title="Community Rules Study" 
-        description="Investigating the formation and enforcement of rules in online spaces"
-        link="https://wiki.communitydata.science/Ecology_of_Online_Communities/Community_rules_study"
-        date="03/2022 — 03/2023"
-      />
-    </section>
-  );
-}
+// function Research() {
+//   return (
+//     <section id="research" className="section-box">
+//       <h2>research</h2>
+//       <ResearchItem 
+//         title="Language Model-Human Behavior Robustness (honors thesis)" 
+//         description="Evaluating prior LLM behavioral studies via replication and ablation" 
+//         link=""
+//         date="05/2023 — Now"
+//       />
+//       <ResearchItem 
+//         title="Generative Agent-Based Modeling" 
+//         description="Augmenting ABMs with generative capabilities to simulate human behavior" 
+//         link=""
+//         date="05/2023 — Now"
+//       />
+//       <ResearchItem 
+//         title="Institutional Simulation" 
+//         description="Creating proxies of complex social systems for counterfactual testing" 
+//         link=""
+//         date="08/2023 — Now"
+//       />
+//       <ResearchItem 
+//         title="Embedded Ethics Initiative" 
+//         description="Integrating ethics into the CS core curriculum at Northwestern"
+//         link="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/prioritizing-the-ethical-dimensions-of-computer-science.html"
+//         date="11/2022 — Now"
+//       />
+//       <ResearchItem 
+//         title="Community Rules Study" 
+//         description="Investigating the formation and enforcement of rules in online spaces"
+//         link="https://wiki.communitydata.science/Ecology_of_Online_Communities/Community_rules_study"
+//         date="03/2022 — 03/2023"
+//       />
+//     </section>
+//   );
+// }
 
 // function Updates() {
 //   return (
@@ -106,7 +101,7 @@ function App() {
         <br />
         <About />
         <Work />
-        <Research />
+        {/* <Research /> */}
         {/* <Updates /> */}
       </main>
     </div>
