@@ -2,18 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
 
 body {
-  font-family: 'IM Fell English', monospace;
-	font-size: 16px;
-	line-height: 1.6;
-	margin: 0;
-	padding: 0;
-	background-color: #f8f5f1;
-	color: #2f170f;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 8px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f6f9;
+  color: #333;
+  text-align: center;
 }
 
 .container {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 40px 20px;
 }
 
 main {
@@ -22,20 +24,16 @@ main {
 }
 
 .section-box {
-  padding: 20px;
+  margin-bottom: 60px;
 }
 
-h2 {
-  margin-top: 0;
-  text-align: left;
-  font-weight: 600;
-  line-height: 50%;
+h2, h3, p, a, .date, #caption {
+  font-size: 14px;
+  margin: 10px 0;
 }
 
-h3 {
-  margin-top: 0;
-  text-align: left;
-  font-weight: 100;
+h2, h3 {
+  font-weight: bold;
 }
 
 ul {
@@ -45,24 +43,52 @@ ul {
 a {
   color: #476896;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #2f4b6e;
 }
 
 .research-item {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  margin-bottom: 40px;
-  line-height: 50%;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.research-item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex-grow: 1;
+  font-size: 10px;
+}
+
+.research-item h3 {
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  color: #4d70ff
+}
+
+.research-item p {
+  margin: 0 0 5px 0;
+  font-size: 10px;
+}
+
+.authors {
+  font-size: 10px;
+  margin: 0 0 5px 0;
+  color: #848484;
 }
 
 .date {
-  margin-left:20px;
+  flex-shrink: 0;
   text-align: right;
-  margin-top: 0px;
+  margin-top: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
 }
 
 .flex-container {
@@ -72,7 +98,51 @@ a:hover {
 
 .img-with-caption {
   display: flex;
-  font-size: small;
+  font-size: 10px;
   flex-direction: column;
   align-items: center;
+}
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.research-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.research-content.expanded {
+  max-height: 2000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+}
+
+.about-info {
+  text-align: left;
+}
+
+#intro p {
+  font-size: 12px;
+}
+
+#intro a {
+  font-size: 12px;
+  color: #274183;
+}
+
+#intro a:hover {
+  color: #4f9eff;
+  text-decoration: underline;
+
 }

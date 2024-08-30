@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import pic from './boomheadshot.jpg';
 import adobo from './adobo.png';
@@ -6,24 +6,43 @@ import adobo from './adobo.png';
 function About() {
   const [showDobo, setShowDobo] = React.useState(false);
   return (
-    <section id="about" className="section-box flex-container">
-      <div>
-        <h2>carolyn zou</h2>
-        <p>cqz [at] stanford [dot] edu</p>
-        <p><a href="https://github.com/cqzou" target="_blank" rel="noreferrer">github</a> | <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a> | <a onMouseOver={e => {e.preventDefault(); document.documentElement.style.cursor = "url('./cursordobo.png')"; setShowDobo(true)}} onMouseLeave={e => {e.preventDefault(); document.documentElement.style.cursor = 'pointer';  setShowDobo(false)}}>hamster</a> {showDobo && <img src={adobo} alt="adobo" style={{width: "100px", position: "absolute"}} />}
-        </p>
-      </div>
-      <div className="img-with-caption">
-        <img src={pic} alt="photo of me :)" style={{width: "160px"}} />
-        <p id="caption">hello :)</p>
+    <section id="about" className="section-box">
+      <div className="about-container">
+        <img src={pic} alt="me :)" className="profile-image" />
+        <div className="about-info">
+          <h2>carolyn zou</h2>
+          <p>cqz [at] stanford [dot] edu</p>
+          <p>
+            <a href="https://github.com/cqzou" target="_blank" rel="noreferrer">github</a> | 
+            <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">  twitter</a> |  
+            <a 
+              onMouseOver={e => {
+                e.preventDefault();
+                document.documentElement.style.cursor = "url('./cursordobo.png')";
+                setShowDobo(true);
+              }} 
+              onMouseLeave={e => {
+                e.preventDefault();
+                document.documentElement.style.cursor = 'pointer';
+                setShowDobo(false);
+              }}
+            >
+              {" "}hamster
+            </a>
+            {showDobo && <img src={adobo} alt="adobo" style={{width: "100px", position: "absolute"}} />}
+          </p>
+        </div>
       </div>
     </section>
   );
 }
-function Work() {
+
+function Intro() {
   return (
-    <section id="work" className="section-box">
-      <p>I recently completed my undergrad at Northwestern, where I was advised by Aaron Shaw. I also led the <a href="https://sites.northwestern.edu/embeddingethics/about-us/" target="_blank" rel="noreferrer">Northwestern Embedded Ethics Initiative</a>.</p> I will be starting my PhD in Computer Science at Stanford University in Fall 2024, supported by a Stanford Graduate Fellowship and NSF Graduate Research Fellowship!
+    <section id="intro" className="section-box">
+      <p>
+        Hello! I'm a first-year CS PhD Student at Stanford advised by Michael Bernstein and rotating in the Fall quarter with Diyi Yang. My work is generously supported by the NSF GRFP and <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noreferrer">Stanford Graduate Fellowship</a>. Previously, I received my BS in Communication Studies at Northwestern, where I was advised by Aaron Shaw.
+      </p>
     </section>
   );
 }
@@ -31,8 +50,9 @@ function Work() {
 function ResearchItem(props) {
   return (
     <div className="research-item">
-      <div>
+      <div className="research-item-content">
         <h3>{props.title}</h3>
+        <p className="authors">{props.authors}</p>
         <p>{props.description}</p>
         {props.link && <a href={props.link} target="_blank" rel="noreferrer">[more]</a>}
       </div>
@@ -41,68 +61,52 @@ function ResearchItem(props) {
   );
 }
 
-// function Research() {
-//   return (
-//     <section id="research" className="section-box">
-//       <h2>research</h2>
-//       <ResearchItem 
-//         title="Language Model-Human Behavior Robustness (honors thesis)" 
-//         description="Evaluating prior LLM behavioral studies via replication and ablation" 
-//         link=""
-//         date="05/2023 — Now"
-//       />
-//       <ResearchItem 
-//         title="Generative Agent-Based Modeling" 
-//         description="Augmenting ABMs with generative capabilities to simulate human behavior" 
-//         link=""
-//         date="05/2023 — Now"
-//       />
-//       <ResearchItem 
-//         title="Institutional Simulation" 
-//         description="Creating proxies of complex social systems for counterfactual testing" 
-//         link=""
-//         date="08/2023 — Now"
-//       />
-//       <ResearchItem 
-//         title="Embedded Ethics Initiative" 
-//         description="Integrating ethics into the CS core curriculum at Northwestern"
-//         link="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/prioritizing-the-ethical-dimensions-of-computer-science.html"
-//         date="11/2022 — Now"
-//       />
-//       <ResearchItem 
-//         title="Community Rules Study" 
-//         description="Investigating the formation and enforcement of rules in online spaces"
-//         link="https://wiki.communitydata.science/Ecology_of_Online_Communities/Community_rules_study"
-//         date="03/2022 — 03/2023"
-//       />
-//     </section>
-//   );
-// }
+function Research() {
+  const [isExpanded, setIsExpanded] = useState(true);
 
-// function Updates() {
-//   return (
-//     <section id="ups" className="section-box">
-//       <h2>news</h2>
-//       <ul>
-//         <li>08/2023: Presented poster for Stanford CURIS</li>
-//         <li>06/2023: Started UW DUB REU</li>
-//         <li>04/2023: Student speaker at Northwestern SoC board meeting</li>
-//         <li>04/2023: <a href="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/wildhacks-2023-inspires-creativity-innovation-and-collaboration.html">Crowd favorite & track winner at WildHacks</a></li>
-//         <li>02/2023: Joined Lambda Pi Eta</li>
-//       </ul>
-//     </section>
-//   );
-// }
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  return (
+    <section id="research" className="section-box">
+      <h2 onClick={toggleExpand} style={{ cursor: 'pointer' }}>
+        work {isExpanded ? '▼' : '▶'}
+      </h2>
+      <div className={`research-content ${isExpanded ? 'expanded' : ''}`}>
+        {/* <ResearchItem 
+          title="Generative Agent-Based Modeling" 
+          authors=""
+          description=""
+          link=""
+          date="05/2023 — Now"
+        /> */}
+        <ResearchItem 
+          title="Validation Without Ground Truth? Methods for Trust in Generative Simulations" 
+          authors="Helena Vasconcelos*, Carolyn Zou*, Lindsay Popowski, Tobias Gerstenberg, Ranjay Krishna, Michael Bernstein"
+          description="highlighted talk, HEAL workshop, CHI 2024" 
+          link=""
+          date="08/2023 — 05/2024"
+        />
+        <ResearchItem 
+          title="Sociotechnical Risks of Simulating Humans with Language Model Agents" 
+          authors="advised by Aaron Shaw"
+          description="undergraduate thesis at Northwestern"
+          link=""
+          date="05/2023 — 06/2024"
+        />
+      </div>
+    </section>
+  );
+}
 
 function App() {
   return (
     <div className="container">
       <main>
-        <br />
         <About />
-        <Work />
-        {/* <Research /> */}
-        {/* <Updates /> */}
+        <Intro />
+        <Research />
       </main>
     </div>
   );
