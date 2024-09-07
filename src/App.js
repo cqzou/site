@@ -41,7 +41,7 @@ function Intro() {
   return (
     <section id="intro" className="section-box">
       <p>
-        Hello! I'm a first-year CS PhD Student at Stanford advised by Michael Bernstein and rotating in the Fall quarter with Diyi Yang. My work is generously supported by the NSF GRFP and <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noreferrer">Stanford Graduate Fellowship</a>. Previously, I received my BS in Communication Studies at Northwestern, where I was advised by Aaron Shaw.
+        Hello! I'm a first-year CS PhD student at Stanford advised by Michael Bernstein and rotating in the Fall quarter with Diyi Yang. My work is generously supported by the NSF GRFP and <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noreferrer">Stanford Graduate Fellowship</a>. Previously, I received my BS in Communication Studies at Northwestern, where I was advised by Aaron Shaw.
       </p>
     </section>
   );
