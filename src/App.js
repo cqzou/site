@@ -11,7 +11,7 @@ function About() {
         <img src={pic} alt="me :)" className="profile-image" />
         <div className="about-info">
           <h2>carolyn zou</h2>
-          <p>cqz [at] stanford [dot] edu</p>
+          <p>cqz [at] cs [dot] stanford [dot] edu</p>
           <p>
             <a href="https://github.com/cqzou" target="_blank" rel="noreferrer">github</a> | 
             <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">  twitter</a> |  
