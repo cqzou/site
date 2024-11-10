@@ -56,16 +56,21 @@ function ResearchItem(props) {
       <div className="research-item-content">
         <h3>{props.title}</h3>
         <p className="authors">{props.authors}</p>
-        <p>{props.description}</p>
-        {props.link &&
-          <a
-            href={props.link}
-            target="_blank"
-            rel="noreferrer"
-            download
-            style={{ fontSize: '0.7em', opacity: 0.8 }}
-          >[more]</a>
-        }
+        <p>
+          {props.description}
+          {props.link &&
+            <span>
+              {" "}
+              <a
+                href={props.link}
+                target="_blank"
+                rel="noreferrer"
+                download
+                style={{ fontSize: '0.8em', opacity: 0.8 }}
+              >[more]</a>
+            </span>
+          }
+        </p>
       </div>
       <p className="date">{props.date}</p>
     </div>
