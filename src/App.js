@@ -57,7 +57,15 @@ function ResearchItem(props) {
         <h3>{props.title}</h3>
         <p className="authors">{props.authors}</p>
         <p>{props.description}</p>
-        {props.link && <a href={props.link} target="_blank" rel="noreferrer">[more]</a>}
+        {props.link &&
+          <a
+            href={props.link}
+            target="_blank"
+            rel="noreferrer"
+            download
+            style={{ fontSize: '0.7em', opacity: 0.8 }}
+          >[more]</a>
+        }
       </div>
       <p className="date">{props.date}</p>
     </div>
@@ -95,7 +103,7 @@ function Research() {
           title="Sociotechnical Risks of Simulating Humans with Language Model Agents" 
           authors="advised by Aaron Shaw"
           description="undergraduate thesis at Northwestern"
-          link="files/zou-llm-robustness.pdf"
+          link="/files/zou-llm-robustness.pdf"
           date="05/2023 — 06/2024"
         />
       </div>
