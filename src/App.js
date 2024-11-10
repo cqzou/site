@@ -43,6 +43,9 @@ function Intro() {
       <p>
         Hello! I'm a first-year CS PhD student at Stanford advised by Michael Bernstein and rotating in the Fall quarter with Diyi Yang. My work is generously supported by the NSF GRFP and <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noreferrer">Stanford Graduate Fellowship</a>. Previously, I received my BS in Communication Studies at Northwestern, where I was advised by Aaron Shaw.
       </p>
+      <p>
+        I'm passionate about teaching; at Northwestern, I helped lead the <a href="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/prioritizing-the-ethical-dimensions-of-computer-science.html" target="_blank" rel="noreferrer">embedded ethics initiative</a> in the CS department. Currently, I am a teaching assistant for Stanford's <a href="https://joonspk-research.github.io/cs222-fall24/" target="_blank" rel="noreferrer">CS222: AI Agents and Simulations</a>.
+      </p>
     </section>
   );
 }
@@ -92,7 +95,7 @@ function Research() {
           title="Sociotechnical Risks of Simulating Humans with Language Model Agents" 
           authors="advised by Aaron Shaw"
           description="undergraduate thesis at Northwestern"
-          link=""
+          link="files/zou-llm-robustness.pdf"
           date="05/2023 — 06/2024"
         />
       </div>
