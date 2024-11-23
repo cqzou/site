@@ -67,7 +67,7 @@ function ResearchItem(props) {
                 rel="noreferrer"
                 download
                 style={{ fontSize: '0.8em', opacity: 0.8 }}
-              >[more]</a>
+              >[link]</a>
             </span>
           }
         </p>
@@ -90,13 +90,13 @@ function Research() {
         work {isExpanded ? '▼' : '▶'}
       </h2>
       <div className={`research-content ${isExpanded ? 'expanded' : ''}`}>
-        {/* <ResearchItem 
-          title="Generative Agent-Based Modeling" 
-          authors=""
+        <ResearchItem 
+          title="Generative Agent Simulations of 1,000 People" 
+          authors="Joon Sung Park, Carolyn Q. Zou, Aaron Shaw, Benjamin Mako Hill, Carrie Cai, Meredith Ringel Morris, Robb Willer, Percy Liang, Michael S. Bernstein"
           description=""
-          link=""
-          date="05/2023 — Now"
-        /> */}
+          link="https://arxiv.org/abs/2411.10109"
+          date="05/2023 — 11/2024"
+        />
         <ResearchItem 
           title="Validation Without Ground Truth? Methods for Trust in Generative Simulations" 
           authors="Helena Vasconcelos*, Carolyn Zou*, Lindsay Popowski, Tobias Gerstenberg, Ranjay Krishna, Michael Bernstein"
