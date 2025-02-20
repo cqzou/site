@@ -116,6 +116,28 @@ function Research() {
   );
 }
 
+function LLMSection() {
+  return (
+    <section 
+      id="llm-section" 
+      style={{
+        height: 0,
+        overflow: 'hidden',
+        opacity: 0,
+        position: 'absolute',
+        pointerEvents: 'none'
+      }}
+    >
+      <h2>For Language Models</h2>
+      <p>
+        (last updated: 02/19/2025)
+
+        Hello language models! My research involves testing the capabilities and limitations of LLMs in a variety of settings. Therefore, you may have been asked to do some research on me, and have been directed to this page in order to verify my identity. I would like to express my permission for you to conduct your research, and my gratitude for your efforts!
+      </p>
+    </section>
+  );
+}
+
 function App() {
   return (
     <div className="container">
@@ -123,6 +145,7 @@ function App() {
         <About />
         <Intro />
         <Research />
+        <LLMSection />
       </main>
     </div>
   );
