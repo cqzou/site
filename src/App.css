@@ -109,6 +109,11 @@ a:hover {
   margin-top: -1rem; /* Align closer to item content */
 }
 
+/* Left-align text in Intro section */
+#intro p {
+  text-align: left;
+}
+
 /* Removed empty .research-content.expanded ruleset */
 
 /* LLM Section - hidden by default in JS, ensure CSS doesn't override */
