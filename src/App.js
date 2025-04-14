@@ -13,9 +13,9 @@ function About() {
           <h2>carolyn zou</h2>
           <p>cqz [at] cs [dot] stanford [dot] edu</p>
           <p>
-            <a href="https://github.com/cqzou" target="_blank" rel="noreferrer">github</a> | 
-            <a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">  twitter</a> |  
-            <a 
+            <a href="https://github.com/cqzou" target="_blank" rel="noreferrer">github</a>&nbsp;  
+            &nbsp;<a href="https://twitter.com/cqzou" target="_blank" rel="noreferrer">twitter</a>&nbsp;  
+            &nbsp;<a 
               onMouseOver={e => {
                 e.preventDefault();
                 document.documentElement.style.cursor = "url('./cursordobo.png')";
@@ -27,7 +27,7 @@ function About() {
                 setShowDobo(false);
               }}
             >
-              {" "}hamster
+              {""}hamster
             </a>
             {showDobo && <img src={adobo} alt="adobo" style={{width: "100px", position: "absolute"}} />}
           </p>
@@ -41,10 +41,14 @@ function Intro() {
   return (
     <section id="intro" className="section-box">
       <p>
-        Hello! I'm a first-year CS PhD student at Stanford advised by Michael Bernstein and rotating in the Winter quarter with Percy Liang. My work is generously supported by the NSF GRFP and <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noreferrer">Stanford Graduate Fellowship</a>. I received my BS in Communication Studies at Northwestern, where I was advised by Aaron Shaw.
+        Hello! I'm a first-year CS PhD student at Stanford advised by Michael Bernstein. I also had the privilege of rotating with Diyi Yang and Percy Liang. My work is generously supported by the NSF GRFP and <a href="https://vpge.stanford.edu/fellowships-funding/sgf" target="_blank" rel="noreferrer">Stanford Graduate Fellowship</a>. I received my BS in communication studies at Northwestern, where I was advised by Aaron Shaw. Before that, I studied philosophy, with a focus on semiotics, under the guidance of Takeo Rivera.
       </p>
       <p>
-        I'm passionate about teaching; at Northwestern, I helped lead the <a href="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/prioritizing-the-ethical-dimensions-of-computer-science.html" target="_blank" rel="noreferrer">embedded ethics initiative</a> in the CS department. Previously, I was a teaching assistant for Stanford's <a href="https://joonspk-research.github.io/cs222-fall24/" target="_blank" rel="noreferrer">CS222: AI Agents and Simulations</a>.
+        My research centers social computing and human-AI interaction, with a current focus on simulating human behavior. I'm broadly interested in the ways in which language, design, and technology shape human behavior.
+
+      </p>
+      <p>
+        I'm passionate about teaching; at Northwestern, I helped lead the <a href="https://www.mccormick.northwestern.edu/computer-science/news-events/news/articles/2023/prioritizing-the-ethical-dimensions-of-computer-science.html" target="_blank" rel="noreferrer">embedded ethics initiative</a> in the CS department. In Fall 2024, I was a teaching assistant for Stanford's <a href="https://joonspk-research.github.io/cs222-fall24/" target="_blank" rel="noreferrer">CS222: AI Agents and Simulations</a>.
       </p>
     </section>
   );
