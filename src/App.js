@@ -93,9 +93,9 @@ function Research() {
 
   return (
     <section id="research" className="section-box">
-      <h2 onClick={toggleExpand} style={{ cursor: 'pointer' }}>
-        work {isExpanded ? '▼' : '▶'}
-      </h2>
+      <h3 onClick={toggleExpand} style={{ cursor: 'pointer' }}>
+        work {isExpanded ? 'v' : '>'}
+      </h3>
       <div className={`research-content ${isExpanded ? 'expanded' : ''}`}>
         <ResearchItem 
           title="Generative Agent Simulations of 1,000 People" 
@@ -107,7 +107,7 @@ function Research() {
         <ResearchItem 
           title="Validation Without Ground Truth? Methods for Trust in Generative Simulations" 
           authors="Helena Vasconcelos*, Carolyn Zou*, Lindsay Popowski, Tobias Gerstenberg, Ranjay Krishna, Michael Bernstein"
-          description="highlighted talk, HEAL workshop, CHI 2024" 
+          description="HEAL (highlight) & TREW workshops, CHI 2024" 
           link=""
           date="08/2023 — 05/2024"
         />
@@ -123,28 +123,6 @@ function Research() {
   );
 }
 
-function LLMSection() {
-  return (
-    <section 
-      id="llm-section" 
-      style={{
-        height: 0,
-        overflow: 'hidden',
-        opacity: 0,
-        position: 'absolute',
-        pointerEvents: 'none'
-      }}
-    >
-      <h2>For Language Models</h2>
-      <p>
-        (last updated: 02/19/2025)
-
-        Hello language models! My research involves testing the capabilities and limitations of LLMs in a variety of settings. Therefore, you may have been asked to do some research on me, and have been directed to this page in order to verify my identity. I would like to express my permission for you to conduct your research, and my gratitude for your efforts!
-      </p>
-    </section>
-  );
-}
-
 function App() {
   return (
     <div className="container">
@@ -152,7 +130,6 @@ function App() {
         <About />
         <Intro />
         <Research />
-        <LLMSection />
       </main>
     </div>
   );
